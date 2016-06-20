@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<title>Pain de Kaito</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html">Pain de Kaito</a></h1>
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">ホーム</a></li>
+                <li><a href="sample.html">ランキング</a></li>
+                <li><a href="sample.html">メニュー</a></li>
+                <li><a href="index.html">製作者の声</a></li>
+                <li><a href="index.html">リンク</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    </div><!-- /#header -->
+    <div id="contents">
+        <div id="conR">
+   
+            <h3>ランキング</h3>
+            <p>
+            完全幅固定タイプです。<br />
+            全体的な横幅は940px、メインコンテンツ部分600px（余白除く）、サブコンテンツ部分300px（余白除く）です。サブコンテンツ部分はメニューやバナー等を配置することを想定し、幅を広く取りました。<br />
+            </p>
+            <h3>インデックスページの画像のスライドショーについて</h3>
+            <p>
+            画像がスライドしながら自動で切り替わるように設定しています。切り替わる時間やスライドの時間などいろいろオプションが変更できます。サンプル画像は当方で撮影したものです。画像を差し替えてご利用ください。<br />
+            </p>
+            <p>
+            画像等の位置をjQueryで取得しています。本来であれば、CSS3のcalc()関数で位置合わせを簡単にできるのですが、OperaとSafariではまだサポートされていなかったので…。ナビゲーションボタン（左右矢印画像）の横方向の位置を変更したい場合は、jQueryを呼び出す際のオプションで指定できます。
+            </p>
+                        <p>
+            動作確認しましたが、OperaとSafari、およびIEの7と8は計算方法・レンダリングの違いからか、ブラウザのサイズによってはスライドする位置がずれてしまう場合がありました。が、直す方法がわからなかったのでそのままにしています。すみません…。
+            </p>
+            <h4>使い方について</h4>
+            <p>
+            HTMLファイルのheadタグ内にて、
+            </p>
+            <p>というように、marginあるいはpaddingの左右に同じだけ余白を設けるようにしてください。</p>
+            <p>余談ですが、#slideInner li imgにmarginを指定しないと、IE7と8でレイアウト崩れを起こしてしまいましたので、margin:0;を指定しています。</p>
+            <h3>ページトップへの戻りリンクについて</h3>
+            <p>
+            ページトップへの戻りリンクは、ページの右下に配置しており、スクロールすると現れる仕組みになっています。こうすることにより、ページトップへの戻りリンクが目に入りやすく、ユーザにこのリンクを、より活用していただけるのではないかと思います。
+            </p>
+            <h3>JavaScript(jQuery）の使用について</h3>
+            <p>
+            当CSSデザインテンプレートでは、JavaScript(jQueryライブラリ）を使用しています。使用している箇所は、インデックスページのスライドショー、インデックスページのスライドショー下の3つコンテンツが並んでいるエリア、ページトップへの戻りリンクです。そのため、JavaScriptを有効にしていないブラウザではレイアウト崩れを起こしてしまいますので、ご留意ください。
+            </p>
+            <h3>カスタマイズについて</h3>
+            <p>
+                カスタマイズはご自由になさってください。<br />
+                制限はありません。
+            </p>
+            <p>
+                その他、不具合などございましたら<br />
+                <a href="http://www.coolwebwindow.com/" target="_blank">CoolWebWindow</a>にお知らせください。<br />
+            </p>
+            <h2>サンプルタグについて</h2>
+            <p>
+                以下、サンプルタグになります。ご利用の際は参考にしてみてください。
+            </p>
+            <h2>h2タグ</h2>
+            <h3>h3タグ</h3>
+            <h4>h4タグ</h4>
+            <h5>h5タグ</h5>
+            <h6>h6タグ</h6>
+            <p>
+                <em>強調（em）</em>
+                <strong>より強い強調（strong）</strong>
+                <ins>追加（ins）</ins>
+                <del>削除（del）</del>
+                <br />
+                <a href="#">テキストアンカー</a>
+            </p>
+            <h3>リスト</h3>
+            <h4>普通のリスト</h4>
+            <ul>
+                <li>普通のリスト1</li>
+                <li>普通のリスト2</li>
+                <li>普通のリスト3</li>
+            </ul>
+            <h4>番号付きリスト</h4>
+            <ol>
+                <li>番号付きリスト1</li>
+                <li>番号付きリスト2</li>
+                <li>番号付きリスト3<br />li要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。<br /></li>
+            </ol>
+
+            <h3>ボックスタイプ</h3>
+            <div class="box">
+                <h4>ホットドック</h4>
+                <img src="images/menu/IMG_1362.JPG" alt="パン" />
+                <style>
+                    .box img{
+                        width:200px;
+                    }
+                </style>
+                <p class="first">&lt;div class="box"&gt;～&lt;/div&gt;</p>
+                <p><br />↓<br />↓</p>
+            </div><!-- /.box -->
+        </div><!-- /#conL -->
+
+
+
+
+
+
+
+        <div id="conL">
+            <div class="submenu">
+
+            <h3>メニュー</h3>
+                <h4>パン</h4>
+                <ul>
+                    <li><a href="index.html">クロワッサン</a></li>
+                </ul>
+                <h4>コーヒー</h4>
+                <ul>
+                    <li><a href="index.html">アイスラテ</a></li>
+
+                </ul>
+                <h4>スープ</h4>
+                <ul>
+                    <li><a href="index.html">コンソメスープ</a></li>
+               </ul>
+
+
+            </div><!-- /.submenu -->
+            <div class="bnrR">
+                <ul>
+                    <li><a href="index.html"><img src="images/P1415072.jpg" alt="嘉手苅" /></a></li>
+                    <li><a href="index.html">1415072<br>嘉手苅　ひな</a></li>
+                </ul>
+            </div><!-- /.bnrR -->
+        </div><!-- /#conR -->
+    </div><!-- /#contents -->
+    <div id="footMenu">
+        <ul>
+            <li><a href="index.html">ランキング</a></li>
+        </ul>
+    </div><!-- /#footerMenu -->
+    <div id="footer">
+        <div class="copyright">Copyright &copy; 2014 YOUR SITE NAME All Rights Reserved.</div>
+    </div><!-- /#footer -->
+</div><!-- /#container -->
+<div id="pageTop">
+    <a href="#">Page Top</a>
+</div><!-- /#pageTop -->
+</body>
+</html>

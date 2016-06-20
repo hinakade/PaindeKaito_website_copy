@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#slide').slideshow({
+                autoSlide    : true,
+                type         : 'repeat',
+                interval     : 3000,
+                duration     : 500,
+                easing       : 'swing',
+                imgHoverStop : true,
+                navHoverStop : true,
+                prevPosition : 0,
+                nextPosition : 0,
+                baseWidth    : 940
+        });
+    $('.slidePrev img').rollover();
+    $('.slideNext img').rollover();
+    $(window).load(function() {
+         $('.topNaviCon').uniformHeight();
+    });
+});
+</script>
+<title>Pain de Kaito</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html">Pain de Kaito</a></h1>
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">ホーム</a></li>
+                <li><a href="sample.html">ランキング</a></li>
+                <li><a href="sample.html">メニュー</a></li>
+                <li><a href="index.html">製作者の声</a></li>
+                <li><a href="index.html">リンク</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    </div><!-- /#header -->
+    <div id="slide">
+        <ul class="slideInner">
+            <li><a href="index.html"><img src="images/menu/IMG_1362.JPG" alt="" /></a></li>
+            <li><a href="index.html"><img src="images/menu/IMG_1409.JPG" alt="" /></a></li>
+            <li><a href="index.html"><img src="images/menu/IMG_1483.JPG" alt="" /></a></li>
+        </ul>
+        <div class="slidePrev"><img src="images/nav_prev.png" alt="前へ" title="" /></div>
+        <div class="slideNext"><img src="images/nav_next.png" alt="次へ" title="" /></div>
+        <div class="controlNav"></div>
+    </div><!--/slide-->
+    <div id="contents">
+       <div class="topNavi">
+            <div class="topNaviColumn">
+                <h2>メニュー</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                    <p>pain de kaito　の自慢のメニューを紹介します。</p>
+                    <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+            <div class="topNaviColumn">
+                <h2>ランキング</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/photo02.jpg" alt="" /></div>
+                    <p>Pain de Kaitoの独自のランキングを作りました。詳しくはこちらから</p>
+                    <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+            <div class="topNaviColumn">
+                <h2>リンク</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/photo03.jpg" alt="" /></div>
+                    <p>Pain de Kaitoの本店の情報が記載されています。</p>
+                    <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+        </div><!-- /.topNavi -->
+        <div id="conR">
+            <div class="information">
+                <h3>INFORMATION</h3>
+                <dl>
+                    <dt>2013-08-04</dt>
+                    <dd>新商品ができました！</dd>
+                    <dt>2013-08-03</dt>
+                    <dd>Twitterを更新しました。</dd>
+                    <dt>2013-08-02</dt>
+                    <dd>新しいwebサイトが完成しました。</dd>
+                    <dt>2013-08-01</dt>
+                    <dd>始めまして！</dd>
+                </dl>
+                 <div class="bnrR">
+                <ul>
+                    <li><a href="index.html"><img src="images/P1415072.jpg" alt="嘉手苅" /></a></li>
+                    <li><a href="index.html">1415072<br>嘉手苅　ひな</a></li>
+                </ul>
+            </div><!-- /.bnrR -->
+            </div><!-- /.information -->
+
+
+            <div class="bnrL">
+            </div><!-- /.bnrL -->
+
+
+        </div><!-- /.conR -->
+        <div id="conL">
+            <div class="submenu">
+            <h3>メニュー</h3>
+                <h4>パン</h4>
+                <ul>
+                    <li><a href="index.html">クロワッサン</a></li>
+                </ul>
+                <h4>コーヒー</h4>
+                <ul>
+                    <li><a href="index.html">アイスラテ</a></li>
+
+                </ul>
+                <h4>スープ</h4>
+                <ul>
+                    <li><a href="index.html">コンソメスープ</a></li>
+               </ul>
+            </div><!-- /.submenu -->
+           
+        </div><!-- /.conL -->
+    </div><!-- /#contents -->
+            </div><!-- /.box -->
+
+    <div id="footMenu">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+        </ul>
+    </div><!-- /#footerMenu -->
+    <div id="footer">
+        <div class="copyright">group 2 &copy; 2016 Preliminary Seminar.</div>
+    </div><!-- /#footer -->
+</div><!-- /#container -->
+<div id="pageTop">
+    <a href="#">Page Top</a>
+</div><!-- /#pageTop -->
+</body>
+</html>
